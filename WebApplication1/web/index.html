@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <pg:paging>
+            <table border="1">
+                <%
+                    for (int i = 1; i <= 100; i++) {
+                %> 
+                <pg:item> 
+                    <tr>
+                        <td>
+                            Item <%=i%> ...  <br />
+                        </td>
+                    </tr>
+                </pg:item> 
+                <%    }
+                %> 
+            </table>
+            <pg:index>
+                <pg:page><%=thisPage%></pg:page>
+            </pg:index>
+        </pg:paging>
+    </body>
+</html>
