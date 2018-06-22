@@ -11,8 +11,13 @@ import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
+import com.google.maps.NearbySearchRequest;
+import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.GeocodingResult;
+import com.google.maps.model.LatLng;
+import com.google.maps.model.PlacesSearchResponse;
+import com.google.maps.model.PlacesSearchResult;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
@@ -28,25 +33,43 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author cuongvm
  */
-public class NewClass extends HttpServlet{
+public class NewClass {
 
     public static void main(String[] args) throws ApiException, InterruptedException, IOException {
         GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyBs5tL2NKzpKEQ60wTCzyBLDjVfq3_hJ6I").build();
         GeocodingResult[] results = GeocodingApi.geocode(context, "22 lang ha").await();
+        //cover to json format.
         String result = new GsonBuilder().setPrettyPrinting().create().toJson(results[0].addressComponents);
+        //get data from json format
         JsonArray ja = (JsonArray) new JsonParser().parse(result);
-        Map data = new HashMap<String, String>();
-        //System.out.println(gson.toJson(results[0].addressComponents));
-        Long start = System.currentTimeMillis();
-        for (int i = 0; i < ja.size(); i++) {
-            JsonObject jo = (JsonObject) ja.get(i);
-            String value = jo.get("longName").getAsString();
-            JsonArray keys = (JsonArray) jo.get("types");
-            System.out.println(keys.get(0).getAsString() + " \t" + value );
-            data.put(keys.get(0).getAsString(), value);
-        }
-        Long end = System.currentTimeMillis();
-        System.out.println(end - start);
+//        Map data = new HashMap<String, String>();
+//        //System.out.println(gson.toJson(results[0].addressComponents));
+//        Long start = System.currentTimeMillis();
+//        for (int i = 0; i < ja.size(); i++) {
+//            JsonObject jo = (JsonObject) ja.get(i);
+//            String value = jo.get("longName").getAsString();
+//            JsonArray keys = (JsonArray) jo.get("types");
+//            System.out.println(keys.get(0).getAsString() + " \t" + value );
+//            data.put(keys.get(0).getAsString(), value);
+//        }
+//        Long end = System.currentTimeMillis();
+//        System.out.println(end - start);
+        
+       try{
+           System.out.println(results[0].geometry.location.lat + "\t" +results[0].geometry.location.lng );
+           
+           NearbySearchRequest request = PlacesApi.nearbySearchQuery(context, new LatLng(21.015829, 105.814196));
+          
+                PlacesSearchResponse psR = request.await();
+        
+           //PlacesSearchResult[] res = PlacesApi.nearbySearchQuery(context, results[0].geometry.location).await().results;
+//        result = new GsonBuilder().setPrettyPrinting().create().toJson(res[0].formattedAddress);
+            
+            System.out.println("Done!!!");
+
+       } catch (Exception e){
+           System.out.println("Exception  "+ e.getMessage());
+       }
     }
 
     @Override

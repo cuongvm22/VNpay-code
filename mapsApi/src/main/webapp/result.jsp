@@ -28,7 +28,7 @@
         </style>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap"
         async defer></script>
-        <script>
+        <script >
             var map;
             function initMap() {
                 map = new google.maps.Map(document.getElementById('map'), {
