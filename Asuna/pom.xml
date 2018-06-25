@@ -3,55 +3,32 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>JDev</groupId>
-    <artifactId>mapsApi</artifactId>
+    <artifactId>Asuna</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
-    <name>mapsApi</name>
+    <name>Asuna</name>
 
     <properties>
         <endorsed.dir>${project.build.directory}/endorsed</endorsed.dir>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
     
-  
-    
     <dependencies>
-        
-        <!--add lib to connect to excel file-->
-        <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
-        <!-- connect to xls file -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi</artifactId>
-            <version>3.17</version>
-        </dependency>
-        <!-- connect to xlsx file -->
-        <dependency>
-            <groupId>org.apache.poi</groupId>
-            <artifactId>poi-ooxml</artifactId>
-            <version>3.17</version>
-        </dependency>
-
-        
         <dependency>
             <groupId>javax</groupId>
             <artifactId>javaee-web-api</artifactId>
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- add google maps api -->
+        
+        <!-- https://mvnrepository.com/artifact/com.restfb/restfb -->
         <dependency>
-            <groupId>com.google.maps</groupId>
-            <artifactId>google-maps-services</artifactId>
-            <version>0.2.7</version>
+            <groupId>com.restfb</groupId>
+            <artifactId>restfb</artifactId>
+            <version>2.6.0</version>
         </dependency>
-        <!-- add slf4 to use google maps api -->
-        <dependency>
-            <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-nop</artifactId>
-            <version>1.7.25</version>
-        </dependency>
+
     </dependencies>
 
     <build>

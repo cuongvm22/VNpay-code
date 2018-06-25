@@ -5,29 +5,21 @@
  */
 package jdev.mavenproject2;
 
-import com.google.gson.GsonBuilder;
-import com.google.gson.JsonArray;
-import com.google.gson.JsonObject;
-import com.google.gson.JsonParser;
 import com.google.maps.GeoApiContext;
 import com.google.maps.GeocodingApi;
-import com.google.maps.NearbySearchRequest;
-import com.google.maps.PlacesApi;
 import com.google.maps.errors.ApiException;
 import com.google.maps.model.GeocodingResult;
-import com.google.maps.model.LatLng;
-import com.google.maps.model.PlacesSearchResponse;
-import com.google.maps.model.PlacesSearchResult;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+import java.util.concurrent.TimeUnit;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  *
@@ -36,78 +28,78 @@ import javax.servlet.http.HttpServletResponse;
 public class NewClass {
 
     public static void main(String[] args) throws ApiException, InterruptedException, IOException {
-        GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyBs5tL2NKzpKEQ60wTCzyBLDjVfq3_hJ6I").build();
-        GeocodingResult[] results = GeocodingApi.geocode(context, "22 lang ha").await();
-        //cover to json format.
-        String result = new GsonBuilder().setPrettyPrinting().create().toJson(results[0].addressComponents);
-        //get data from json format
-        JsonArray ja = (JsonArray) new JsonParser().parse(result);
-//        Map data = new HashMap<String, String>();
-//        //System.out.println(gson.toJson(results[0].addressComponents));
-//        Long start = System.currentTimeMillis();
-//        for (int i = 0; i < ja.size(); i++) {
-//            JsonObject jo = (JsonObject) ja.get(i);
-//            String value = jo.get("longName").getAsString();
-//            JsonArray keys = (JsonArray) jo.get("types");
-//            System.out.println(keys.get(0).getAsString() + " \t" + value );
-//            data.put(keys.get(0).getAsString(), value);
-//        }
-//        Long end = System.currentTimeMillis();
-//        System.out.println(end - start);
-        
-       try{
-           System.out.println(results[0].geometry.location.lat + "\t" +results[0].geometry.location.lng );
-           
-           NearbySearchRequest request = PlacesApi.nearbySearchQuery(context, new LatLng(21.015829, 105.814196));
-          
-                PlacesSearchResponse psR = request.await();
-        
-           //PlacesSearchResult[] res = PlacesApi.nearbySearchQuery(context, results[0].geometry.location).await().results;
-//        result = new GsonBuilder().setPrettyPrinting().create().toJson(res[0].formattedAddress);
-            
-            System.out.println("Done!!!");
+        List<String> apiKey = new ArrayList<String>();
+        Scanner s = new Scanner(new File("data/apikey.txt"));
+        while (s.hasNext()) {
+            apiKey.add(s.nextLine());
+        }
 
-       } catch (Exception e){
-           System.out.println("Exception  "+ e.getMessage());
-       }
-    }
+        GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyDoYsgT7GmC8puHWM19rGV9Xam-3zooC1w").build();
+        GeocodingResult[] results = null;
+        XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File("data/DS Diemketnoi.xlsx")));
+        int total = workbook.getSheetAt(0).getPhysicalNumberOfRows();
 
-    @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        
-        try {
-            Map data = new HashMap<String, String>();
-            
-            GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyBs5tL2NKzpKEQ60wTCzyBLDjVfq3_hJ6I").build();
-            GeocodingResult[] results = GeocodingApi.geocode(context, (String) req.getParameter("address")).await();
-            //cover results to json
-            String result = new GsonBuilder().setPrettyPrinting().create().toJson(results[0].addressComponents);
-            JsonArray ja = (JsonArray) new JsonParser().parse(result);
-            
-            for (int i = 0; i < ja.size(); i++) {
-                JsonObject jo = (JsonObject) ja.get(i);
-                String value = jo.get("longName").getAsString();
-                // a array without element which is jsonObject
-                JsonArray keys = (JsonArray) jo.get("types");
-                data.put(keys.get(0).getAsString(), value);
-            }
-            String address = data.get("STREET_NUMBER")+ " " + data.get("ROUTE") +", " + data.get("ADMINISTRATIVE_AREA_LEVEL_2") +", " + data.get("ADMINISTRATIVE_AREA_LEVEL_1") + ", " + data.get("COUNTRY") ; 
-            req.setAttribute("address", address );
-            req.setAttribute("lat", results[0].geometry.location.lat );
-            req.setAttribute("lng", results[0].geometry.location.lng );
-            req.setAttribute("json", result);
-            
-            RequestDispatcher rd = req.getRequestDispatcher("result.jsp");
-            rd.forward(req, resp);
-            
-            
-        } catch (ApiException ex) {
-            Logger.getLogger(NewClass.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (InterruptedException ex) {
-            Logger.getLogger(NewClass.class.getName()).log(Level.SEVERE, null, ex);
+        for (int i = 1; i < total / 2000 + 1; i++) {
+            int end = (((i+1)*2000)>total)? total:((i+1)*2000);
+            insertLocation((i * 2000 + 1),end ,apiKey.get(i) , "data/DS Diemketnoi.xlsx");
         }
     }
-    
-    
 
-}
+    public static void insertLocation(int start, int end, String apiKey, String pathFile) throws ApiException, InterruptedException, IOException {
+        XSSFWorkbook workbook = new XSSFWorkbook(new FileInputStream(new File(pathFile)));
+        XSSFSheet sheet = workbook.getSheetAt(0);
+
+        GeoApiContext context = new GeoApiContext.Builder().apiKey(apiKey).build();
+        GeocodingResult[] results;
+        for (int i = start; i < end; i++) {
+            if (sheet.getRow(i).getCell(4).getStringCellValue() == null) {
+                continue;
+            }
+            results = GeocodingApi.geocode(context, sheet.getRow(i).getCell(4).getStringCellValue()).await();
+            if (results.length == 0) {
+                continue;
+            }
+            Cell cell = sheet.getRow(i).getCell(10);
+            cell.setCellValue(results[0].geometry.location.lat);
+            cell = sheet.getRow(i).getCell(11);
+            cell.setCellValue(results[0].geometry.location.lng);
+            TimeUnit.SECONDS.sleep(1);
+        }
+        workbook.write(new FileOutputStream(pathFile));
+        
+        System.out.printf("Insert succesfull %d record\n", (start + 1)* 2000 );
+    }
+        //@Override
+//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+//
+//        try {
+//            Map data = new HashMap<String, String>();
+//
+//            GeoApiContext context = new GeoApiContext.Builder().apiKey("AIzaSyBs5tL2NKzpKEQ60wTCzyBLDjVfq3_hJ6I").build();
+//            GeocodingResult[] results = GeocodingApi.geocode(context, (String) req.getParameter("address")).await();
+//            //cover results to json
+//            String result = "";
+//            for (int i = 0; i < results.length; i++) {
+//                if (results.length != 0) {
+//                    // result = new GsonBuilder().setPrettyPrinting().create().toJson(results[0]);
+//                    result += results[i].formattedAddress + "\n";
+//                    req.setAttribute("address", result);
+//                    req.setAttribute("lat", results[0].geometry.location.lat);
+//                    req.setAttribute("lng", results[0].geometry.location.lng);
+//                    //req.setAttribute("json", result);
+//
+//                } else {
+//                    req.setAttribute("address", "Can't find this address!");
+//                }
+//            }
+//
+//            RequestDispatcher rd = req.getRequestDispatcher("result.jsp");
+//            rd.forward(req, resp);
+//
+//        } catch (ApiException ex) {
+//            Logger.getLogger(NewClass.class.getName()).log(Level.SEVERE, null, ex);
+//        } catch (InterruptedException ex) {
+//            Logger.getLogger(NewClass.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//    }
+    }
