@@ -1,0 +1,2 @@
+2018-06-27 11:44:25,962 ERROR [TestPlaceSearch.java : 52] Error Request must contain 'keyword', 'name' or 'type'.
+2018-06-27 11:48:50,870 ERROR [TestPlaceSearch.java : 52] Error Request must contain 'keyword', 'name' or 'type'.

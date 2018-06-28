@@ -12,7 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <form action="NewClass" method="get">
+        <form action="PlaceSearch" method="get">
             <label>
                 Hello! </br>
                 Import your Address.
@@ -20,7 +20,7 @@
             <input type="text" name="address" value="" />
             <input type="submit" value="Submit" />
         
-        </form>>
+        </form>
         
     </body>
 </html>

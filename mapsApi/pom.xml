@@ -17,7 +17,12 @@
   
     
     <dependencies>
-        
+        <!--Add log back to follow app-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.13</version>
+        </dependency>
         <!--add lib to connect to excel file-->
         <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
         <!-- connect to xls file -->
@@ -32,6 +37,13 @@
             <artifactId>poi-ooxml</artifactId>
             <version>3.17</version>
         </dependency>
+        
+        <!-- https://mvnrepository.com/artifact/org.springframework/spring-webmvc -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.0.7.RELEASE</version>
+        </dependency>
 
         
         <dependency>
@@ -40,17 +52,38 @@
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-        <!-- add google maps api -->
-        <dependency>
-            <groupId>com.google.maps</groupId>
-            <artifactId>google-maps-services</artifactId>
-            <version>0.2.7</version>
-        </dependency>
+        
         <!-- add slf4 to use google maps api -->
         <dependency>
             <groupId>org.slf4j</groupId>
-            <artifactId>slf4j-nop</artifactId>
+            <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
+        </dependency>
+        <!--Logback-->
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-access</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-core</artifactId>
+            <version>1.2.3</version>
+        </dependency>
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>20180130</version>
+        </dependency>
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>1.2</version>
         </dependency>
     </dependencies>
 
