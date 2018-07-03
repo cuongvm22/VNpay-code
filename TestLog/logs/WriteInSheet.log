@@ -1,0 +1,4 @@
+2018-06-27 09:52:26,664 ERROR [TestLog.java : 20] This's a error log
+2018-06-27 09:53:24,500 ERROR [TestLog.java : 20] This's a error log
+2018-06-27 09:54:30,910 ERROR [TestLog.java : 20] This's a error log
+2018-06-27 09:54:30,930 INFO [TestLog.java : 21] Hello! this's an info log

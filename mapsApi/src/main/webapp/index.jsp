@@ -9,18 +9,30 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title> </title>
     </head>
     <body>
-        <form action="PlaceSearch" method="get">
+
+        <form action="placeSearch">
+            <h1>${error}</h1>
+            Hello! 
+            </br>
             <label>
-                Hello! </br>
                 Import your Address.
             </label>
+            <br>
             <input type="text" name="address" value="" />
+            <br>
+            <label>
+                Import radius (meters)
+            </label>
+            <br>
+            <input type="text" name="radius" value="" />
+            <br>
             <input type="submit" value="Submit" />
-        
+
+
         </form>
-        
+        <a href="hello">a</a>
     </body>
 </html>

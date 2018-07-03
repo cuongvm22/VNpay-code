@@ -1,0 +1,15 @@
+[Unit]
+Description=Fraud Consumer Service
+After=syslog.target kafka.service
+[Service]
+WorkingDirectory=/var/app/vnpaygw/fraud-message-consumer
+SyslogIdentifier=FraudMessageSonsumer
+	
+#ExecStart=/bin/bash -c "java -jar /home/myapp/application/my-spark-app.jar"
+ExecStart=/var/app/vnpaygw/fraud-message-consumer/bin/fraud-message-consumer
+
+User=depadmin
+Type=simple
+
+[Install]
+WantedBy=multi-user.target

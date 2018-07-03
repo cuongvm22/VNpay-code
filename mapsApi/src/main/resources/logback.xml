@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configuration>
     <!-- <property name="LOG_DIR" value="/var/logs" /> -->
-    <appender name="logfileWrite" class="ch.qos.logback.core.ConsoleAppender"> 
+    <appender name="logConsole" class="ch.qos.logback.core.ConsoleAppender"> 
         <encoder> 
             <pattern>%date %level [%file : %line] %msg%n  </pattern> 
         </encoder> 
     </appender>
     <appender name="logFile" class="ch.qos.logback.core.FileAppender">
-        <file>logs/ConnectGoogleApi.log</file> 
+        <file>logs/getJSON.log</file> 
         <encoder> 
             <pattern>%date %level [%file : %line] %msg%n  </pattern> 
         </encoder> 
     </appender>
-    <logger name="logback" level="info"> 
-        <appender-ref ref="logfileWrite" additivity="true" /> 
+    <logger name="logback" level="debug"> 
+        <appender-ref ref="logConsole" additivity="true" /> 
         <appender-ref ref="logFile" additivity="true" /> 
     </logger> 
     

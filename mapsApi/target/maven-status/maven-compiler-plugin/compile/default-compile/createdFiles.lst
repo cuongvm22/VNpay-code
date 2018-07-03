@@ -1,8 +1,8 @@
-jdev\mavenproject2\controller\PlaceSearch.class
-jdev\mavenproject2\controller\GetJson.class
-jdev\mavenproject2\controller\GetNearPlace.class
-jdev\mavenproject2\model\LatLng.class
-jdev\mavenproject2\controller\NewClass.class
-jdev\mavenproject2\controller\GetInputAddress.class
-jdev\mavenproject2\model\Location.class
-jdev\mavenproject2\model\Place.class
+zeros\mapsapi\controller\GetDistance.class
+zeros\mapsapi\model\Place.class
+zeros\mapsapi\model\Location.class
+zeros\mapsapi\controller\GetJson.class
+zeros\mapsapi\controller\GetNearPlace.class
+zeros\mapsapi\controller\GetInputAddress.class
+zeros\mapsapi\controller\PlaceSearchController.class
+zeros\mapsapi\model\LatLng.class
