@@ -30,25 +30,45 @@ import org.slf4j.LoggerFactory;
 public class GetJson {
 
     static final Logger log = LoggerFactory.getLogger("logback");
+    private Scanner s;
+    private String jsonText = "";
+    private String url = null;
 
     public JSONObject getJsonLocation(String address, String apiKey) throws MalformedURLException, IOException {
-        String url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + URLEncoder.encode(address, "utf-8") + "&key=" + apiKey;
-        Scanner s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
-        String jsonText = "";
-        while (s.hasNextLine()) {
-            jsonText += s.nextLine();
+
+        try {
+            url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + URLEncoder.encode(address, "utf-8") + "&key=" + apiKey;
+            s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
+            while (s.hasNextLine()) {
+                jsonText += s.nextLine();
+            }
+            s.close();
+
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            log.info(url);
+        } finally {
+            return new JSONObject(jsonText);
         }
-        return new JSONObject(jsonText);
     }
 
     public JSONObject getJsonPlane(LatLng location, String apiKey, double radius, String type) throws MalformedURLException, UnsupportedEncodingException, IOException {
-        String url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + location.getLat() + "," + location.getLng() + "&radius=" + radius + "&type=" + type + "&keyword=cruise&key=" + apiKey;
-        Scanner s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
         String jsonText = "";
-        while (s.hasNextLine()) {
-            jsonText += s.nextLine();
+        String url = null;
+        try {
+            url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + location.getLat() + "," + location.getLng() + "&radius=" + radius + "&type=" + type + "&keyword=cruise&key=" + apiKey;
+            s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
+            while (s.hasNextLine()) {
+                jsonText += s.nextLine();
+            }
+            s.close();
+
+        } catch (Exception e) {
+            log.error(e.getMessage());
+            log.info(url);
+        } finally {
+            return new JSONObject(jsonText);
         }
-        return new JSONObject(jsonText);
     }
 
     public JSONObject getJsonDistance(Location loc, LatLng latlng, String apiKey) throws MalformedURLException, IOException {
@@ -56,7 +76,7 @@ public class GetJson {
         String url = null;
         try {
             url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=" + loc.getLatlng().toString() + "&destinations=" + latlng.toString() + "&key=" + apiKey;
-            Scanner s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
+            s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
             while (s.hasNextLine()) {
                 jsonText += s.nextLine();
             }
