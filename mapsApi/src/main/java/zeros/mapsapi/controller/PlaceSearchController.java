@@ -22,7 +22,7 @@ import org.springframework.stereotype.Controller;
 @Controller
 public class PlaceSearchController {
 
-    static final Logger log = LoggerFactory.getLogger("logback");
+    private static Logger log = LoggerFactory.getLogger("logback");
 
     @RequestMapping("/placeSearch")
     protected String placeSearch(@RequestParam("address") String address, @RequestParam("radius") String radiusString, ModelMap m) throws IOException {
@@ -30,7 +30,8 @@ public class PlaceSearchController {
         CheckInput ci = new CheckInput(address, radiusString);
         if (!ci.back){
             m.addAttribute("error", ci.mes);
-            return "../../index";
+            log.error(ci.mes);
+            return "../../index";  
         }
         try {
             Location loc = new GetInputAddress(address, "AIzaSyBwwvhuVC0HKxPvk9Ei5LwOwfZ1qq6oqAU").getLocation();

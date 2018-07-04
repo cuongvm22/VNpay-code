@@ -5,4 +5,6 @@ zeros\mapsapi\controller\GetJson.class
 zeros\mapsapi\controller\GetNearPlace.class
 zeros\mapsapi\controller\GetInputAddress.class
 zeros\mapsapi\controller\PlaceSearchController.class
+zeros\mapsapi\controller\CheckInput.class
 zeros\mapsapi\model\LatLng.class
+.netbeans_automatic_build

@@ -20,6 +20,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import org.json.JSONObject;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -29,7 +30,7 @@ import org.slf4j.LoggerFactory;
  */
 public class GetJson {
 
-    static final Logger log = LoggerFactory.getLogger("logback");
+    private static Logger log = LoggerFactory.getLogger("logback");
     private Scanner s;
     private String jsonText = "";
     private String url = null;
@@ -37,12 +38,14 @@ public class GetJson {
     public JSONObject getJsonLocation(String address, String apiKey) throws MalformedURLException, IOException {
 
         try {
+            log.info("start requet to Gooogle geocoding");
             url = "https://maps.googleapis.com/maps/api/geocode/json?address=" + URLEncoder.encode(address, "utf-8") + "&key=" + apiKey;
             s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
             while (s.hasNextLine()) {
                 jsonText += s.nextLine();
             }
             s.close();
+            log.info("End requet to Gooogle");
 
         } catch (Exception e) {
             log.error(e.getMessage());
@@ -56,12 +59,14 @@ public class GetJson {
         String jsonText = "";
         String url = null;
         try {
+            log.info("start requet to Gooogle nearby search");
             url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + location.getLat() + "," + location.getLng() + "&radius=" + radius + "&type=" + type + "&keyword=cruise&key=" + apiKey;
             s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
             while (s.hasNextLine()) {
                 jsonText += s.nextLine();
             }
             s.close();
+            log.info("End requet to Gooogle");
 
         } catch (Exception e) {
             log.error(e.getMessage());
@@ -75,12 +80,14 @@ public class GetJson {
         String jsonText = "";
         String url = null;
         try {
+            log.info("start requet to Gooogle Distancematrix");
             url = "https://maps.googleapis.com/maps/api/distancematrix/json?units=metric&origins=" + loc.getLatlng().toString() + "&destinations=" + latlng.toString() + "&key=" + apiKey;
             s = new Scanner(new InputStreamReader(new URL(url).openStream(), Charset.forName("utf-8")));
             while (s.hasNextLine()) {
                 jsonText += s.nextLine();
             }
             s.close();
+            log.info("End requet to Gooogle");
 
         } catch (Exception e) {
             log.error(e.getMessage());
