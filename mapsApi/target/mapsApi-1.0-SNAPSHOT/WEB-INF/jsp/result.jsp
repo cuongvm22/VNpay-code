@@ -6,6 +6,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="ISO-8859-1" %> 
 <%@ page import="zeros.mapsapi.model.*"%>
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -26,6 +27,7 @@
                 <td>Distance
                 <td>Duration
             </tr>
+            
             <c:forEach items="${list}" var="e">
                 <tr>
                     <td><c:out value="${e.name}"></c:out></td>

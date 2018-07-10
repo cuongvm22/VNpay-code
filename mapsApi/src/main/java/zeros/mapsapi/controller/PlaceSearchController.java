@@ -25,7 +25,7 @@ public class PlaceSearchController {
     private static Logger log = LoggerFactory.getLogger("logback");
 
     @RequestMapping("/placeSearch")
-    protected String placeSearch(@RequestParam("address") String address, @RequestParam("radius") String radiusString, ModelMap m) throws IOException {
+    public String placeSearch(@RequestParam("address") String address, @RequestParam("radius") String radiusString, ModelMap m) throws IOException {
 
         CheckInput ci = new CheckInput(address, radiusString);
         if (!ci.back){

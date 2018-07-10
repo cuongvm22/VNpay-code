@@ -12,6 +12,7 @@
         <title> </title>
     </head>
     <body>
+        
 
         <form action="placeSearch">
             <h1>${error}</h1>
