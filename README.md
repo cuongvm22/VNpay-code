@@ -1,2 +1,2 @@
 # VNpay-code
-VNPay - https://sandbox.vnpayment.vn/tryitnow/
+VNPay(demo) - https://sandbox.vnpayment.vn/tryitnow/
