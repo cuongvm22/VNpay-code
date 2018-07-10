@@ -2,3 +2,19 @@
 2018-06-27 09:53:24,500 ERROR [TestLog.java : 20] This's a error log
 2018-06-27 09:54:30,910 ERROR [TestLog.java : 20] This's a error log
 2018-06-27 09:54:30,930 INFO [TestLog.java : 21] Hello! this's an info log
+2018-07-04 10:18:05,315 INFO [TestLog.java : 22] info lock
+2018-07-04 10:18:05,337 ERROR [TestLog.java : 24] info lock
+2018-07-04 10:19:08,127 INFO [TestLog.java : 22] info lock
+2018-07-04 10:19:08,154 ERROR [TestLog.java : 24] info lock
+2018-07-04 10:20:31,470 INFO [TestLog.java : 22] info lock
+2018-07-04 10:20:31,504 DEBUG [TestLog.java : 23] info lock
+2018-07-04 10:20:31,506 ERROR [TestLog.java : 24] info lock
+2018-07-04 11:52:52,027 INFO [NewClass.java : 19] Info logger
+2018-07-04 11:52:52,055 DEBUG [NewClass.java : 20] debug logger
+2018-07-04 11:52:52,055 ERROR [NewClass.java : 21] Error logger
+2018-07-04 11:53:58,915 INFO [NewClass.java : 19] Info logger
+2018-07-04 11:53:58,957 DEBUG [NewClass.java : 20] debug logger
+2018-07-04 11:53:58,967 ERROR [NewClass.java : 21] Error logger
+2018-07-04 11:54:42,656 INFO [NewClass.java : 19] Info logger
+2018-07-04 11:54:42,680 DEBUG [NewClass.java : 20] debug logger
+2018-07-04 11:54:42,684 ERROR [NewClass.java : 21] Error logger
