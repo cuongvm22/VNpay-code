@@ -29,15 +29,13 @@ public class GetData {
     private static Connection con;
     private static PreparedStatement ps;
     private static DataSource dataSource = (DataSource) new ClassPathXmlApplicationContext("dataSource.xml").getBean("dataSource");
-    
 
     public static Order getOrderByID(int id) throws SQLException, ClassNotFoundException {
         Order o = new Order();
         try {
-            sql = "Select * from `order`.order where idorder = ?";
-            log.info("Start get Connection ...");
+            log.info("getConnection - getOrderById");
             con = dataSource.getConnection();
-            log.info("getConnection succesfull!!!");
+            sql = "Select * from `order`.order where idorder = ?";
             ps = con.prepareStatement(sql);
             ps.setInt(1, id);
             ResultSet rs = ps.executeQuery();
@@ -53,15 +51,17 @@ public class GetData {
             log.info("Get Order succesfull!!!");
         } catch (Exception e) {
             log.error(e.getMessage());
+        } finally {
+            con.close();
+            log.info("Close connection!!!");
         }
         return o;
     }
 
     public static void insert(Order o) throws SQLException, ClassNotFoundException {
-        log.info("Start get Connection ...");
-        con = dataSource.getConnection();
-        log.info("getConnection succesfull!!!");
         try {
+            log.info("Get connection - insert");
+            con = dataSource.getConnection();
             sql = "insert into `order`.order (totalPrice, content, dateCreate, property, timeCreate) values( ?, ?, ?, ?, ?)";
             ps = con.prepareStatement(sql);
             ps.setDouble(1, o.getTotalPrice());
@@ -74,14 +74,17 @@ public class GetData {
 
         } catch (SQLException ex) {
             log.error(GetData.class.getName());
+        } finally {
+            con.close();
+            log.info("Close connection!!!");
         }
     }
 
     public static List<Order> getListOrder(int page, int size) throws SQLException, ClassNotFoundException {
         List<Order> list = new ArrayList<>();
-        con = dataSource.getConnection();
-        log.info("getConnection succesfull!!!");
         try {
+            log.info("Get Connection - getListOrder()");
+            con = dataSource.getConnection();
             sql = ("SELECT * FROM `order`.`order` order by idorder DESC limit ?,?");
             ps = con.prepareStatement(sql);
             ps.setInt(1, (page - 1) * size);
@@ -99,22 +102,30 @@ public class GetData {
                         )
                 );
             }
-            log.info("End get Orders!");
+            log.info("Get List<Order> successfull!!!");
         } catch (SQLException ex) {
             log.error(ex.getMessage());
+        } finally {
+            con.close();
+            log.info("Close connection!!!");
         }
-        log.info("Return List Order");
+
         return list;
     }
 
-    public static int countRecord() throws SQLException{
-        sql = "select count(idorder) from `order`.order";
+    public static int countRecord() throws SQLException {
         int count = 0;
-        con = dataSource.getConnection();
-        ps = con.prepareStatement(sql);
-        ResultSet rs = ps.executeQuery();
-        while(rs.next())
-            count = rs.getInt(1);
+        try {
+            sql = "select count(idorder) from `order`.order";
+            con = dataSource.getConnection();
+            ps = con.prepareStatement(sql);
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                count = rs.getInt(1);
+            }
+        } catch(Exception e){
+            log.error(e.getMessage());
+        }
         return count;
     }
 }

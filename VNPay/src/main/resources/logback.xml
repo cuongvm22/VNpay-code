@@ -7,7 +7,7 @@
         </encoder> 
     </appender>
     <appender name="logFile" class="ch.qos.logback.core.FileAppender">
-        <file>${LOG_DIR}/VNPay.log</file> 
+        <file>${LOG_DIR}/VNPayDemo.log</file> 
         <encoder> 
             <pattern>%date %level [%file : %line] %msg%n  </pattern> 
         </encoder> 
