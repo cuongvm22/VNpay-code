@@ -44,18 +44,18 @@
 
             <div class="table-responsive">
                 <!-- top pagination -->
-                <div class="pager">
-                    <ul class="pagination">                        
-                        <li><a href="index?pages=${back}">Back &laquo;</a></li>  
+                <div class="text-center">
+                    <ul class="pagination pagination-centered">                        
+                        <li class="page-item"><a class="page-link" href="index?pages=${back}">Back &laquo;</a></li>  
                             <c:forEach items="${paginationNumber}" var="e">
                                 <c:if test="${e != 0}">
-                                <li><a href="index?pages=${e}">${e}</a></li> 
+                                <li class="page-item"><a class="page-link" href="index?pages=${e}">${e}</a></li> 
                                 </c:if>
                                 <c:if test="${e == 0}">
-                                <li><a href="#">...</a></li> 
+                                <li class="page-item"><a class="page-link" href="">...</a></li> 
                                 </c:if>
                             </c:forEach>
-                        <li><a href="index?pages=${next}"> &raquo; Next</a></li>                    
+                        <li class="page-item"><a class="page-link" href="index?pages=${next}"> &raquo; Next</a></li>                    
                     </ul>
                 </div>
 

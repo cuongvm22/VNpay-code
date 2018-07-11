@@ -14,7 +14,6 @@ import java.util.List;
 import javax.sql.DataSource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.slf4j.event.Level;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import zeros.vnpay.model.Order;
 
@@ -33,7 +32,7 @@ public class GetData {
     public static Order getOrderByID(int id) throws SQLException, ClassNotFoundException {
         Order o = new Order();
         try {
-            log.info("getConnection - getOrderById");
+            log.info("getOrderById: getConnection");
             con = dataSource.getConnection();
             sql = "Select * from `order`.order where idorder = ?";
             ps = con.prepareStatement(sql);
@@ -48,7 +47,7 @@ public class GetData {
                         rs.getTime(6),
                         rs.getString(5));
             }
-            log.info("Get Order succesfull!!!");
+            log.info("Get Order("+ id +") succesfull!!!");
         } catch (Exception e) {
             log.error(e.getMessage());
         } finally {
@@ -60,7 +59,7 @@ public class GetData {
 
     public static void insert(Order o) throws SQLException, ClassNotFoundException {
         try {
-            log.info("Get connection - insert");
+            log.info("insert: Get connection ");
             con = dataSource.getConnection();
             sql = "insert into `order`.order (totalPrice, content, dateCreate, property, timeCreate) values( ?, ?, ?, ?, ?)";
             ps = con.prepareStatement(sql);
@@ -70,21 +69,22 @@ public class GetData {
             ps.setString(4, o.getProperty());
             ps.setTime(5, o.getTime());
             ps.executeUpdate();
-            log.info("insert succesfull!!!");
+            log.info("insert order("+(countRecord() + 1)+") succesfull!!!");
 
         } catch (SQLException ex) {
             log.error(GetData.class.getName());
         } finally {
             con.close();
-            log.info("Close connection!!!");
+            log.info("---------------------Close connection---------------------");
         }
     }
 
     public static List<Order> getListOrder(int page, int size) throws SQLException, ClassNotFoundException {
         List<Order> list = new ArrayList<>();
         try {
-            log.info("Get Connection - getListOrder()");
+            
             con = dataSource.getConnection();
+            log.info("getListOrder: Get Connection - successfully");
             sql = ("SELECT * FROM `order`.`order` order by idorder DESC limit ?,?");
             ps = con.prepareStatement(sql);
             ps.setInt(1, (page - 1) * size);
@@ -102,12 +102,12 @@ public class GetData {
                         )
                 );
             }
-            log.info("Get List<Order> successfull!!!");
+            log.info("Get List<Order> pages = "+ page+" successfull!!!");
         } catch (SQLException ex) {
             log.error(ex.getMessage());
         } finally {
             con.close();
-            log.info("Close connection!!!");
+            log.info("---------------------Close connection---------------------");
         }
 
         return list;
@@ -117,6 +117,7 @@ public class GetData {
         int count = 0;
         try {
             sql = "select count(idorder) from `order`.order";
+            log.info("countRecord: Get Connection");
             con = dataSource.getConnection();
             ps = con.prepareStatement(sql);
             ResultSet rs = ps.executeQuery();
@@ -125,6 +126,9 @@ public class GetData {
             }
         } catch(Exception e){
             log.error(e.getMessage());
+        } finally{
+            con.close();
+            log.info("---------------------Close connection---------------------");
         }
         return count;
     }

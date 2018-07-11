@@ -65,7 +65,7 @@
                     <input type="hidden" name="date" value="<%=d%>"/>
                     <input type="hidden" name="time" value="<%=t%>"/>
 
-                    <input type="submit" value="Thanh toán"/>
+                    <input type="submit" class="btn btn-default navbar-btn" value="Thanh toán"/>
 
                 </form>
             </div>
@@ -76,12 +76,8 @@
             <footer class="footer">
                 <p>&copy; VNPAY 2018</p>
             </footer>
-        </div> <!-- /container -->
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-
-        <link href="css/vnpay.css" rel="stylesheet" />
-        <script src="css/vnpay.js"></script>  
-
+        </div> 
+        <!-- /container -->
     </body>
 
     <!-- Mirrored from sandbox.vnpayment.vn/tryitnow/Home/CreateOrder by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 18 Jun 2018 01:38:26 GMT -->
