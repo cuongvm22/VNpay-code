@@ -4,6 +4,8 @@
     Author     : cuongvm
 --%>
 
+<%@page import="java.util.*"%>
+<%@page import="java.util.Calendar"%>
 <%@page import="java.sql.Date"%>
 <%@page import="java.sql.Time"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -39,8 +41,9 @@
                 </nav>
                 <h3 class="text-muted">VNPAY DEMO</h3>
             </div>
-            <%Date d = new Date(System.currentTimeMillis());%>
-            <%Time t = new Time(System.currentTimeMillis());%>
+            <% Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT+7")); %>
+            <% Date d = new Date(cal.get(Calendar.YEAR), cal.get(Calendar.MONTH), cal.get(Calendar.DAY_OF_MONTH)); %>
+            <% Time t = new Time(cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE), cal.get(Calendar.SECOND)); %>
             <h3>Tạo mới đơn h&#224;ng</h3>
             <div class="table-responsive">
                 <form action="insert" id="CreateOrder" method="post">        
