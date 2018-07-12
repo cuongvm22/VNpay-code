@@ -3,6 +3,7 @@
 import com.google.maps.errors.ApiException;
 import controller.WriteToFile;
 import java.io.IOException;
+import java.util.Scanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,7 +19,13 @@ import org.slf4j.LoggerFactory;
 public class App {
 
     public static void main(String[] args) throws  InterruptedException, IOException, ApiException {
-         new WriteToFile("data/DS Diemketnoi.xlsx", 0).Write();
+        Scanner s = new Scanner(System.in);
+        System.out.println("InCol");
+        int inCol = Integer.parseInt(s.nextLine());
+        System.out.println("outCol");
+        int outCol = Integer.parseInt(s.nextLine());
+        
+        new WriteToFile("data/DS Diemketnoi.xlsx", 0).Write(inCol, outCol);
 //        System.out.println("run");
 //        try {
 //            log.warn("Test logback!!!");

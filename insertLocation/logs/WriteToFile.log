@@ -1,11 +1,387 @@
-2018-06-27 10:08:46,640 INFO [WriteToFile.java : 55] Getting ApiKey from apikey.text
-2018-06-27 10:08:46,747 INFO [WriteToFile.java : 57] Get ApiKey from apikey.text sucessfully!
-2018-06-27 10:08:46,750 INFO [WriteToFile.java : 65] Start to update location ...
-2018-06-27 10:08:52,049 ERROR [WriteToFile.java : 78] Line 0, Error: 0
-2018-06-27 10:08:55,644 ERROR [WriteToFile.java : 78] Line 4, Error: You have exceeded your daily request quota for this API.
-2018-06-27 10:11:29,913 ERROR [WriteToFile.java : 78] Line 278, Error: You have exceeded your daily request quota for this API.
-2018-07-04 11:39:24,437 INFO [WriteToFile.java : 56] Getting ApiKey from apikey.text
-2018-07-04 11:39:24,894 INFO [WriteToFile.java : 58] Get ApiKey from apikey.text sucessfully!
-2018-07-04 11:39:24,903 INFO [WriteToFile.java : 66] Start to update location ...
-2018-07-04 11:39:33,151 ERROR [WriteToFile.java : 79] Line 0, Error: 0
-2018-07-04 11:39:36,676 ERROR [WriteToFile.java : 79] Line 3, Error: 0
+2018-07-12 17:05:29,691 INFO [WriteToFile.java : 55] Getting ApiKey from apikey.text
+2018-07-12 17:05:29,738 INFO [WriteToFile.java : 57] Get ApiKey from apikey.text sucessfully!
+2018-07-12 17:05:29,738 INFO [WriteToFile.java : 65] Start to update location ...
+2018-07-12 17:05:31,267 ERROR [WriteToFile.java : 78] Line 0, Error: 0
+2018-07-12 17:05:53,338 ERROR [WriteToFile.java : 78] Line 33, Error: 0
+2018-07-12 17:06:01,887 ERROR [WriteToFile.java : 78] Line 47, Error: 0
+2018-07-12 17:06:02,627 ERROR [WriteToFile.java : 78] Line 48, Error: 0
+2018-07-12 17:06:03,682 ERROR [WriteToFile.java : 78] Line 50, Error: 0
+2018-07-12 17:06:04,217 ERROR [WriteToFile.java : 78] Line 51, Error: 0
+2018-07-12 17:06:11,297 ERROR [WriteToFile.java : 78] Line 62, Error: 0
+2018-07-12 17:06:14,927 ERROR [WriteToFile.java : 78] Line 68, Error: 0
+2018-07-12 17:06:15,447 ERROR [WriteToFile.java : 78] Line 69, Error: 0
+2018-07-12 17:06:37,087 ERROR [WriteToFile.java : 78] Line 102, Error: 0
+2018-07-12 17:06:37,697 ERROR [WriteToFile.java : 78] Line 103, Error: 0
+2018-07-12 17:06:41,667 ERROR [WriteToFile.java : 78] Line 109, Error: 0
+2018-07-12 17:06:45,857 ERROR [WriteToFile.java : 78] Line 116, Error: 0
+2018-07-12 17:06:48,985 ERROR [WriteToFile.java : 78] Line 121, Error: 0
+2018-07-12 17:06:53,987 ERROR [WriteToFile.java : 78] Line 129, Error: 0
+2018-07-12 17:06:54,507 ERROR [WriteToFile.java : 78] Line 130, Error: 0
+2018-07-12 17:06:55,080 ERROR [WriteToFile.java : 78] Line 131, Error: 0
+2018-07-12 17:07:00,588 ERROR [WriteToFile.java : 78] Line 139, Error: 0
+2018-07-12 17:07:03,419 ERROR [WriteToFile.java : 78] Line 144, Error: 0
+2018-07-12 17:07:03,970 ERROR [WriteToFile.java : 78] Line 145, Error: 0
+2018-07-12 17:07:04,669 ERROR [WriteToFile.java : 78] Line 146, Error: 0
+2018-07-12 17:07:06,879 ERROR [WriteToFile.java : 78] Line 150, Error: 0
+2018-07-12 17:07:10,203 ERROR [WriteToFile.java : 78] Line 155, Error: 0
+2018-07-12 17:07:18,689 ERROR [WriteToFile.java : 78] Line 169, Error: 0
+2018-07-12 17:07:26,239 ERROR [WriteToFile.java : 78] Line 182, Error: 0
+2018-07-12 17:07:27,439 ERROR [WriteToFile.java : 78] Line 184, Error: 0
+2018-07-12 17:07:31,349 ERROR [WriteToFile.java : 78] Line 190, Error: 0
+2018-07-12 17:07:31,829 ERROR [WriteToFile.java : 78] Line 191, Error: 0
+2018-07-12 17:07:35,049 ERROR [WriteToFile.java : 78] Line 196, Error: 0
+2018-07-12 17:07:36,119 ERROR [WriteToFile.java : 78] Line 198, Error: 0
+2018-07-12 17:07:37,103 ERROR [WriteToFile.java : 78] Line 200, Error: 0
+2018-07-12 17:07:39,389 ERROR [WriteToFile.java : 78] Line 204, Error: 0
+2018-07-12 17:07:56,429 ERROR [WriteToFile.java : 78] Line 233, Error: 0
+2018-07-12 17:08:10,599 ERROR [WriteToFile.java : 78] Line 255, Error: 0
+2018-07-12 17:08:13,659 ERROR [WriteToFile.java : 78] Line 259, Error: 0
+2018-07-12 17:08:18,010 ERROR [WriteToFile.java : 78] Line 266, Error: 0
+2018-07-12 17:08:18,532 ERROR [WriteToFile.java : 78] Line 267, Error: 0
+2018-07-12 17:08:22,049 ERROR [WriteToFile.java : 78] Line 273, Error: 0
+2018-07-12 17:08:45,649 ERROR [WriteToFile.java : 78] Line 305, Error: 0
+2018-07-12 17:08:53,882 ERROR [WriteToFile.java : 78] Line 315, Error: 0
+2018-07-12 17:08:54,453 ERROR [WriteToFile.java : 78] Line 316, Error: 0
+2018-07-12 17:09:05,759 ERROR [WriteToFile.java : 78] Line 333, Error: 0
+2018-07-12 17:09:17,290 ERROR [WriteToFile.java : 78] Line 352, Error: 0
+2018-07-12 17:09:18,575 ERROR [WriteToFile.java : 78] Line 354, Error: 0
+2018-07-12 17:09:20,269 ERROR [WriteToFile.java : 78] Line 357, Error: 0
+2018-07-12 17:09:22,188 ERROR [WriteToFile.java : 78] Line 360, Error: 0
+2018-07-12 17:09:22,809 ERROR [WriteToFile.java : 78] Line 361, Error: 0
+2018-07-12 17:09:28,320 ERROR [WriteToFile.java : 78] Line 370, Error: 0
+2018-07-12 17:09:46,129 ERROR [WriteToFile.java : 78] Line 399, Error: 0
+2018-07-12 17:09:51,449 ERROR [WriteToFile.java : 78] Line 407, Error: 0
+2018-07-12 17:09:54,580 ERROR [WriteToFile.java : 78] Line 412, Error: 0
+2018-07-12 17:09:58,047 ERROR [WriteToFile.java : 78] Line 418, Error: 0
+2018-07-12 17:09:58,540 ERROR [WriteToFile.java : 78] Line 419, Error: 0
+2018-07-12 17:10:10,787 ERROR [WriteToFile.java : 78] Line 437, Error: 0
+2018-07-12 17:10:12,135 ERROR [WriteToFile.java : 78] Line 439, Error: 0
+2018-07-12 17:10:16,068 ERROR [WriteToFile.java : 78] Line 445, Error: 0
+2018-07-12 17:10:16,506 ERROR [WriteToFile.java : 78] Line 446, Error: 0
+2018-07-12 17:10:17,026 ERROR [WriteToFile.java : 78] Line 447, Error: 0
+2018-07-12 17:10:26,889 ERROR [WriteToFile.java : 78] Line 462, Error: 0
+2018-07-12 17:10:31,428 ERROR [WriteToFile.java : 78] Line 469, Error: 0
+2018-07-12 17:10:41,292 ERROR [WriteToFile.java : 78] Line 485, Error: 0
+2018-07-12 17:10:43,612 ERROR [WriteToFile.java : 78] Line 489, Error: 0
+2018-07-12 17:10:44,130 ERROR [WriteToFile.java : 78] Line 490, Error: 0
+2018-07-12 17:10:44,587 ERROR [WriteToFile.java : 78] Line 491, Error: 0
+2018-07-12 17:10:49,916 ERROR [WriteToFile.java : 78] Line 500, Error: 0
+2018-07-12 17:10:55,228 ERROR [WriteToFile.java : 78] Line 508, Error: 0
+2018-07-12 17:10:58,353 ERROR [WriteToFile.java : 78] Line 513, Error: 0
+2018-07-12 17:11:07,648 ERROR [WriteToFile.java : 78] Line 527, Error: 0
+2018-07-12 17:11:13,161 ERROR [WriteToFile.java : 78] Line 534, Error: 0
+2018-07-12 17:11:25,169 ERROR [WriteToFile.java : 78] Line 554, Error: 0
+2018-07-12 17:11:28,325 ERROR [WriteToFile.java : 78] Line 559, Error: 0
+2018-07-12 17:11:39,104 ERROR [WriteToFile.java : 78] Line 570, Error: 0
+2018-07-12 17:11:41,366 ERROR [WriteToFile.java : 78] Line 574, Error: 0
+2018-07-12 17:11:45,843 ERROR [WriteToFile.java : 78] Line 581, Error: 0
+2018-07-12 17:11:46,467 ERROR [WriteToFile.java : 78] Line 582, Error: 0
+2018-07-12 17:11:47,628 ERROR [WriteToFile.java : 78] Line 584, Error: 0
+2018-07-12 17:11:48,938 ERROR [WriteToFile.java : 78] Line 586, Error: 0
+2018-07-12 17:11:49,507 ERROR [WriteToFile.java : 78] Line 587, Error: 0
+2018-07-12 17:12:01,196 ERROR [WriteToFile.java : 78] Line 605, Error: 0
+2018-07-12 17:12:02,680 ERROR [WriteToFile.java : 78] Line 607, Error: 0
+2018-07-12 17:12:05,540 ERROR [WriteToFile.java : 78] Line 612, Error: 0
+2018-07-12 17:12:29,694 ERROR [WriteToFile.java : 78] Line 649, Error: 0
+2018-07-12 17:12:33,310 ERROR [WriteToFile.java : 78] Line 655, Error: 0
+2018-07-12 17:12:34,369 ERROR [WriteToFile.java : 78] Line 657, Error: 0
+2018-07-12 17:12:38,660 ERROR [WriteToFile.java : 78] Line 664, Error: 0
+2018-07-12 17:12:44,611 ERROR [WriteToFile.java : 78] Line 674, Error: 0
+2018-07-12 17:12:47,008 ERROR [WriteToFile.java : 78] Line 678, Error: 0
+2018-07-12 17:12:52,908 ERROR [WriteToFile.java : 78] Line 688, Error: 0
+2018-07-12 17:13:01,299 ERROR [WriteToFile.java : 78] Line 703, Error: 0
+2018-07-12 17:13:05,888 ERROR [WriteToFile.java : 78] Line 710, Error: 0
+2018-07-12 17:13:11,732 ERROR [WriteToFile.java : 78] Line 719, Error: 0
+2018-07-12 17:13:18,242 ERROR [WriteToFile.java : 78] Line 729, Error: 0
+2018-07-12 17:13:34,012 ERROR [WriteToFile.java : 78] Line 753, Error: 0
+2018-07-12 17:13:36,229 ERROR [WriteToFile.java : 78] Line 757, Error: 0
+2018-07-12 17:14:01,369 ERROR [WriteToFile.java : 78] Line 798, Error: 0
+2018-07-12 17:14:10,328 ERROR [WriteToFile.java : 78] Line 813, Error: 0
+2018-07-12 17:14:11,554 ERROR [WriteToFile.java : 78] Line 815, Error: 0
+2018-07-12 17:14:15,912 ERROR [WriteToFile.java : 78] Line 822, Error: 0
+2018-07-12 17:14:16,370 ERROR [WriteToFile.java : 78] Line 823, Error: 0
+2018-07-12 17:14:16,852 ERROR [WriteToFile.java : 78] Line 824, Error: 0
+2018-07-12 17:14:22,740 ERROR [WriteToFile.java : 78] Line 833, Error: 0
+2018-07-12 17:14:26,097 ERROR [WriteToFile.java : 78] Line 838, Error: 0
+2018-07-12 17:14:26,654 ERROR [WriteToFile.java : 78] Line 840, Error: Cannot get a STRING value from a NUMERIC cell
+2018-07-12 17:14:33,936 ERROR [WriteToFile.java : 78] Line 853, Error: 0
+2018-07-12 17:14:37,662 ERROR [WriteToFile.java : 78] Line 859, Error: 0
+2018-07-12 17:14:37,928 ERROR [WriteToFile.java : 78] Line 860, Error: 0
+2018-07-12 17:14:48,342 ERROR [WriteToFile.java : 78] Line 877, Error: 0
+2018-07-12 17:14:50,037 ERROR [WriteToFile.java : 78] Line 880, Error: 0
+2018-07-12 17:14:56,501 ERROR [WriteToFile.java : 78] Line 890, Error: 0
+2018-07-12 17:15:01,749 ERROR [WriteToFile.java : 78] Line 899, Error: 0
+2018-07-12 17:15:02,278 ERROR [WriteToFile.java : 78] Line 900, Error: 0
+2018-07-12 17:15:02,739 ERROR [WriteToFile.java : 78] Line 901, Error: 0
+2018-07-12 17:15:03,216 ERROR [WriteToFile.java : 78] Line 902, Error: 0
+2018-07-12 17:15:05,978 ERROR [WriteToFile.java : 78] Line 907, Error: 0
+2018-07-12 17:15:06,564 ERROR [WriteToFile.java : 78] Line 908, Error: 0
+2018-07-12 17:15:34,452 ERROR [WriteToFile.java : 78] Line 955, Error: 0
+2018-07-12 17:15:36,723 ERROR [WriteToFile.java : 78] Line 959, Error: 0
+2018-07-12 17:15:37,270 ERROR [WriteToFile.java : 78] Line 960, Error: 0
+2018-07-12 17:15:43,327 ERROR [WriteToFile.java : 78] Line 969, Error: 0
+2018-07-12 17:16:00,348 ERROR [WriteToFile.java : 78] Line 996, Error: 0
+2018-07-12 17:16:09,771 ERROR [WriteToFile.java : 78] Line 1012, Error: 0
+2018-07-12 17:16:10,312 ERROR [WriteToFile.java : 78] Line 1013, Error: 0
+2018-07-12 17:16:21,806 ERROR [WriteToFile.java : 78] Line 1033, Error: 0
+2018-07-12 17:16:35,069 ERROR [WriteToFile.java : 78] Line 1054, Error: 0
+2018-07-12 17:16:40,909 ERROR [WriteToFile.java : 78] Line 1066, Error: 0
+2018-07-12 17:16:53,118 ERROR [WriteToFile.java : 78] Line 1089, Error: 0
+2018-07-12 17:16:55,989 ERROR [WriteToFile.java : 78] Line 1094, Error: 0
+2018-07-12 17:16:58,538 ERROR [WriteToFile.java : 78] Line 1098, Error: 0
+2018-07-12 17:17:00,469 ERROR [WriteToFile.java : 78] Line 1101, Error: 0
+2018-07-12 17:17:01,488 ERROR [WriteToFile.java : 78] Line 1102, Error: 0
+2018-07-12 17:17:04,452 ERROR [WriteToFile.java : 78] Line 1106, Error: 0
+2018-07-12 17:17:06,419 ERROR [WriteToFile.java : 78] Line 1109, Error: 0
+2018-07-12 17:17:08,209 ERROR [WriteToFile.java : 78] Line 1112, Error: 0
+2018-07-12 17:17:10,720 ERROR [WriteToFile.java : 78] Line 1117, Error: 0
+2018-07-12 17:17:14,305 ERROR [WriteToFile.java : 78] Line 1123, Error: 0
+2018-07-12 17:17:19,573 ERROR [WriteToFile.java : 78] Line 1132, Error: 0
+2018-07-12 17:17:20,077 ERROR [WriteToFile.java : 78] Line 1133, Error: 0
+2018-07-12 17:17:20,522 ERROR [WriteToFile.java : 78] Line 1134, Error: 0
+2018-07-12 17:17:21,052 ERROR [WriteToFile.java : 78] Line 1135, Error: 0
+2018-07-12 17:17:37,050 ERROR [WriteToFile.java : 78] Line 1161, Error: 0
+2018-07-12 17:17:48,382 ERROR [WriteToFile.java : 78] Line 1178, Error: 0
+2018-07-12 17:17:49,548 ERROR [WriteToFile.java : 78] Line 1180, Error: 0
+2018-07-12 17:17:52,531 ERROR [WriteToFile.java : 78] Line 1185, Error: 0
+2018-07-12 17:17:55,479 ERROR [WriteToFile.java : 78] Line 1190, Error: 0
+2018-07-12 17:18:02,384 ERROR [WriteToFile.java : 78] Line 1202, Error: 0
+2018-07-12 17:18:34,062 ERROR [WriteToFile.java : 78] Line 1254, Error: 0
+2018-07-12 17:18:35,691 ERROR [WriteToFile.java : 78] Line 1257, Error: 0
+2018-07-12 17:18:36,262 ERROR [WriteToFile.java : 78] Line 1258, Error: 0
+2018-07-12 17:18:37,312 ERROR [WriteToFile.java : 78] Line 1260, Error: 0
+2018-07-12 17:18:37,801 ERROR [WriteToFile.java : 78] Line 1261, Error: 0
+2018-07-12 17:18:47,930 ERROR [WriteToFile.java : 78] Line 1277, Error: 0
+2018-07-12 17:18:59,391 ERROR [WriteToFile.java : 78] Line 1295, Error: 0
+2018-07-12 17:19:02,822 ERROR [WriteToFile.java : 78] Line 1301, Error: 0
+2018-07-12 17:19:04,604 ERROR [WriteToFile.java : 78] Line 1304, Error: 0
+2018-07-12 17:19:20,682 ERROR [WriteToFile.java : 78] Line 1329, Error: 0
+2018-07-12 17:19:21,142 ERROR [WriteToFile.java : 78] Line 1330, Error: 0
+2018-07-12 17:19:22,532 ERROR [WriteToFile.java : 78] Line 1333, Error: 0
+2018-07-12 17:19:23,092 ERROR [WriteToFile.java : 78] Line 1334, Error: 0
+2018-07-12 17:19:23,570 ERROR [WriteToFile.java : 78] Line 1335, Error: 0
+2018-07-12 17:19:24,071 ERROR [WriteToFile.java : 78] Line 1336, Error: 0
+2018-07-12 17:19:25,173 ERROR [WriteToFile.java : 78] Line 1338, Error: 0
+2018-07-12 17:19:44,132 ERROR [WriteToFile.java : 78] Line 1367, Error: 0
+2018-07-12 17:19:49,351 ERROR [WriteToFile.java : 78] Line 1376, Error: 0
+2018-07-12 17:19:57,692 ERROR [WriteToFile.java : 78] Line 1390, Error: 0
+2018-07-12 17:19:58,792 ERROR [WriteToFile.java : 78] Line 1392, Error: 0
+2018-07-12 17:20:00,032 ERROR [WriteToFile.java : 78] Line 1394, Error: 0
+2018-07-12 17:20:16,742 ERROR [WriteToFile.java : 78] Line 1419, Error: 0
+2018-07-12 17:20:20,311 ERROR [WriteToFile.java : 78] Line 1425, Error: 0
+2018-07-12 17:20:25,554 ERROR [WriteToFile.java : 78] Line 1433, Error: 0
+2018-07-12 17:21:03,940 ERROR [WriteToFile.java : 78] Line 1496, Error: 0
+2018-07-12 17:21:09,970 ERROR [WriteToFile.java : 78] Line 1506, Error: 0
+2018-07-12 17:21:10,991 ERROR [WriteToFile.java : 78] Line 1508, Error: 0
+2018-07-12 17:21:12,046 ERROR [WriteToFile.java : 78] Line 1510, Error: 0
+2018-07-12 17:21:12,575 ERROR [WriteToFile.java : 78] Line 1511, Error: 0
+2018-07-12 17:21:15,505 ERROR [WriteToFile.java : 78] Line 1516, Error: 0
+2018-07-12 17:21:19,683 ERROR [WriteToFile.java : 78] Line 1523, Error: 0
+2018-07-12 17:21:22,912 ERROR [WriteToFile.java : 78] Line 1529, Error: 0
+2018-07-12 17:21:30,092 ERROR [WriteToFile.java : 78] Line 1540, Error: 0
+2018-07-12 17:21:39,282 ERROR [WriteToFile.java : 78] Line 1555, Error: 0
+2018-07-12 17:21:47,251 ERROR [WriteToFile.java : 78] Line 1568, Error: 0
+2018-07-12 17:22:14,231 ERROR [WriteToFile.java : 78] Line 1612, Error: 0
+2018-07-12 17:22:17,082 ERROR [WriteToFile.java : 78] Line 1616, Error: 0
+2018-07-12 17:22:17,545 ERROR [WriteToFile.java : 78] Line 1617, Error: 0
+2018-07-12 17:22:42,711 ERROR [WriteToFile.java : 78] Line 1657, Error: 0
+2018-07-12 17:22:43,332 ERROR [WriteToFile.java : 78] Line 1658, Error: 0
+2018-07-12 17:22:48,371 ERROR [WriteToFile.java : 78] Line 1666, Error: 0
+2018-07-12 17:23:08,692 ERROR [WriteToFile.java : 78] Line 1700, Error: 0
+2018-07-12 17:23:12,285 ERROR [WriteToFile.java : 78] Line 1707, Error: 0
+2018-07-12 17:23:16,831 ERROR [WriteToFile.java : 78] Line 1715, Error: 0
+2018-07-12 17:23:33,412 ERROR [WriteToFile.java : 78] Line 1742, Error: 0
+2018-07-12 17:23:33,931 ERROR [WriteToFile.java : 78] Line 1743, Error: 0
+2018-07-12 17:23:34,441 ERROR [WriteToFile.java : 78] Line 1744, Error: 0
+2018-07-12 17:23:34,921 ERROR [WriteToFile.java : 78] Line 1745, Error: 0
+2018-07-12 17:23:45,155 ERROR [WriteToFile.java : 78] Line 1762, Error: 0
+2018-07-12 17:23:45,682 ERROR [WriteToFile.java : 78] Line 1763, Error: 0
+2018-07-12 17:23:47,311 ERROR [WriteToFile.java : 78] Line 1766, Error: 0
+2018-07-12 17:23:48,401 ERROR [WriteToFile.java : 78] Line 1768, Error: 0
+2018-07-12 17:23:53,721 ERROR [WriteToFile.java : 78] Line 1776, Error: 0
+2018-07-12 17:23:55,011 ERROR [WriteToFile.java : 78] Line 1778, Error: 0
+2018-07-12 17:23:57,921 ERROR [WriteToFile.java : 78] Line 1783, Error: 0
+2018-07-12 17:23:58,412 ERROR [WriteToFile.java : 78] Line 1784, Error: 0
+2018-07-12 17:24:15,432 ERROR [WriteToFile.java : 78] Line 1813, Error: 0
+2018-07-12 17:24:15,922 ERROR [WriteToFile.java : 78] Line 1814, Error: 0
+2018-07-12 17:24:18,001 ERROR [WriteToFile.java : 78] Line 1819, Error: 0
+2018-07-12 17:24:18,715 ERROR [WriteToFile.java : 78] Line 1820, Error: 0
+2018-07-12 17:24:50,741 ERROR [WriteToFile.java : 78] Line 1871, Error: 0
+2018-07-12 17:24:56,482 ERROR [WriteToFile.java : 78] Line 1880, Error: 0
+2018-07-12 17:24:57,091 ERROR [WriteToFile.java : 78] Line 1881, Error: 0
+2018-07-12 17:25:19,812 ERROR [WriteToFile.java : 78] Line 1910, Error: 0
+2018-07-12 17:25:21,422 ERROR [WriteToFile.java : 78] Line 1912, Error: 0
+2018-07-12 17:25:29,900 ERROR [WriteToFile.java : 78] Line 1924, Error: 0
+2018-07-12 17:25:48,991 ERROR [WriteToFile.java : 78] Line 1953, Error: 0
+2018-07-12 17:25:50,188 ERROR [WriteToFile.java : 78] Line 1955, Error: 0
+2018-07-12 17:25:50,431 ERROR [WriteToFile.java : 78] Line 1956, Error: 0
+2018-07-12 17:25:51,651 ERROR [WriteToFile.java : 78] Line 1958, Error: 0
+2018-07-12 17:25:53,987 ERROR [WriteToFile.java : 78] Line 1962, Error: 0
+2018-07-12 17:25:55,228 ERROR [WriteToFile.java : 78] Line 1964, Error: 0
+2018-07-12 17:26:00,636 ERROR [WriteToFile.java : 78] Line 1971, Error: 0
+2018-07-12 17:26:06,028 ERROR [WriteToFile.java : 78] Line 1978, Error: 0
+2018-07-12 17:26:16,261 ERROR [WriteToFile.java : 78] Line 1994, Error: 0
+2018-07-12 17:26:18,020 ERROR [WriteToFile.java : 78] Line 1997, Error: 0
+2018-07-12 17:26:18,477 ERROR [WriteToFile.java : 78] Line 1998, Error: 0
+2018-07-12 17:26:20,511 INFO [WriteToFile.java : 72] Write from 1 to 2001
+2018-07-12 17:26:20,511 ERROR [WriteToFile.java : 78] Line 2001, Error: null
+2018-07-12 17:26:24,787 ERROR [WriteToFile.java : 78] Line 2008, Error: 0
+2018-07-12 17:26:26,637 ERROR [WriteToFile.java : 78] Line 2011, Error: 0
+2018-07-12 17:26:33,629 ERROR [WriteToFile.java : 78] Line 2022, Error: 0
+2018-07-12 17:26:34,328 ERROR [WriteToFile.java : 78] Line 2023, Error: 0
+2018-07-12 17:26:34,858 ERROR [WriteToFile.java : 78] Line 2024, Error: 0
+2018-07-12 17:26:36,628 ERROR [WriteToFile.java : 78] Line 2027, Error: 0
+2018-07-12 17:26:37,127 ERROR [WriteToFile.java : 78] Line 2028, Error: 0
+2018-07-12 17:26:38,348 ERROR [WriteToFile.java : 78] Line 2030, Error: 0
+2018-07-12 17:26:44,258 ERROR [WriteToFile.java : 78] Line 2037, Error: 0
+2018-07-12 17:26:46,438 ERROR [WriteToFile.java : 78] Line 2040, Error: 0
+2018-07-12 17:26:51,898 ERROR [WriteToFile.java : 78] Line 2048, Error: 0
+2018-07-12 17:27:02,868 ERROR [WriteToFile.java : 78] Line 2063, Error: 0
+2018-07-12 17:27:05,258 ERROR [WriteToFile.java : 78] Line 2066, Error: 0
+2018-07-12 17:27:05,968 ERROR [WriteToFile.java : 78] Line 2067, Error: 0
+2018-07-12 17:27:22,837 ERROR [WriteToFile.java : 78] Line 2091, Error: 0
+2018-07-12 17:27:36,998 ERROR [WriteToFile.java : 78] Line 2113, Error: 0
+2018-07-12 17:27:59,778 ERROR [WriteToFile.java : 78] Line 2147, Error: 0
+2018-07-12 17:28:12,498 ERROR [WriteToFile.java : 78] Line 2164, Error: 0
+2018-07-12 17:28:13,048 ERROR [WriteToFile.java : 78] Line 2165, Error: 0
+2018-07-12 17:28:16,871 ERROR [WriteToFile.java : 78] Line 2171, Error: 0
+2018-07-12 17:28:17,977 ERROR [WriteToFile.java : 78] Line 2173, Error: 0
+2018-07-12 17:28:38,891 ERROR [WriteToFile.java : 78] Line 2206, Error: 0
+2018-07-12 17:28:39,958 ERROR [WriteToFile.java : 78] Line 2208, Error: 0
+2018-07-12 17:29:00,378 ERROR [WriteToFile.java : 78] Line 2239, Error: 0
+2018-07-12 17:29:50,648 ERROR [WriteToFile.java : 78] Line 2308, Error: 0
+2018-07-12 17:29:54,158 ERROR [WriteToFile.java : 78] Line 2313, Error: 0
+2018-07-12 17:29:55,368 ERROR [WriteToFile.java : 78] Line 2315, Error: 0
+2018-07-12 17:30:04,438 ERROR [WriteToFile.java : 78] Line 2330, Error: 0
+2018-07-12 17:30:08,178 ERROR [WriteToFile.java : 78] Line 2336, Error: 0
+2018-07-12 17:30:08,901 ERROR [WriteToFile.java : 78] Line 2337, Error: 0
+2018-07-12 17:30:09,358 ERROR [WriteToFile.java : 78] Line 2338, Error: 0
+2018-07-12 17:30:17,218 ERROR [WriteToFile.java : 78] Line 2350, Error: 0
+2018-07-12 17:30:17,718 ERROR [WriteToFile.java : 78] Line 2351, Error: 0
+2018-07-12 17:30:18,228 ERROR [WriteToFile.java : 78] Line 2352, Error: 0
+2018-07-12 17:30:20,338 ERROR [WriteToFile.java : 78] Line 2355, Error: 0
+2018-07-12 17:30:21,088 ERROR [WriteToFile.java : 78] Line 2356, Error: 0
+2018-07-12 17:31:11,905 ERROR [WriteToFile.java : 78] Line 2431, Error: 0
+2018-07-12 17:31:23,913 ERROR [WriteToFile.java : 78] Line 2448, Error: 0
+2018-07-12 17:31:58,682 ERROR [WriteToFile.java : 78] Line 2488, Error: 0
+2018-07-12 17:31:58,952 ERROR [WriteToFile.java : 78] Line 2489, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:31:59,538 ERROR [WriteToFile.java : 78] Line 2490, Error: 0
+2018-07-12 17:32:00,571 ERROR [WriteToFile.java : 78] Line 2491, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:00,840 ERROR [WriteToFile.java : 78] Line 2492, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:01,126 ERROR [WriteToFile.java : 78] Line 2493, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:01,963 ERROR [WriteToFile.java : 78] Line 2494, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:02,210 ERROR [WriteToFile.java : 78] Line 2495, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:05,020 ERROR [WriteToFile.java : 78] Line 2496, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:05,352 ERROR [WriteToFile.java : 78] Line 2497, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:05,621 ERROR [WriteToFile.java : 78] Line 2498, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:05,875 ERROR [WriteToFile.java : 78] Line 2499, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:06,138 ERROR [WriteToFile.java : 78] Line 2500, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:06,423 ERROR [WriteToFile.java : 78] Line 2501, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:06,761 ERROR [WriteToFile.java : 78] Line 2502, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:07,024 ERROR [WriteToFile.java : 78] Line 2503, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:08,011 ERROR [WriteToFile.java : 78] Line 2505, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:08,929 ERROR [WriteToFile.java : 78] Line 2506, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:09,214 ERROR [WriteToFile.java : 78] Line 2507, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:09,461 ERROR [WriteToFile.java : 78] Line 2508, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:12,878 ERROR [WriteToFile.java : 78] Line 2511, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:13,912 ERROR [WriteToFile.java : 78] Line 2512, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:14,213 ERROR [WriteToFile.java : 78] Line 2513, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:14,482 ERROR [WriteToFile.java : 78] Line 2514, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:14,830 ERROR [WriteToFile.java : 78] Line 2515, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:15,100 ERROR [WriteToFile.java : 78] Line 2516, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:15,363 ERROR [WriteToFile.java : 78] Line 2517, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:15,664 ERROR [WriteToFile.java : 78] Line 2518, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:16,103 ERROR [WriteToFile.java : 78] Line 2519, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:17,089 ERROR [WriteToFile.java : 78] Line 2521, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:17,337 ERROR [WriteToFile.java : 78] Line 2522, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:17,622 ERROR [WriteToFile.java : 78] Line 2523, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:17,892 ERROR [WriteToFile.java : 78] Line 2524, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:19,343 ERROR [WriteToFile.java : 78] Line 2527, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:19,597 ERROR [WriteToFile.java : 78] Line 2528, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:19,929 ERROR [WriteToFile.java : 78] Line 2529, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:20,145 ERROR [WriteToFile.java : 78] Line 2530, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:20,376 ERROR [WriteToFile.java : 78] Line 2531, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:20,614 ERROR [WriteToFile.java : 78] Line 2532, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:21,532 ERROR [WriteToFile.java : 78] Line 2534, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:21,748 ERROR [WriteToFile.java : 78] Line 2535, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:21,996 ERROR [WriteToFile.java : 78] Line 2536, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:22,203 ERROR [WriteToFile.java : 78] Line 2537, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:22,435 ERROR [WriteToFile.java : 78] Line 2538, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:22,720 ERROR [WriteToFile.java : 78] Line 2539, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:22,936 ERROR [WriteToFile.java : 78] Line 2540, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:23,168 ERROR [WriteToFile.java : 78] Line 2541, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:23,399 ERROR [WriteToFile.java : 78] Line 2542, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:23,622 ERROR [WriteToFile.java : 78] Line 2543, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:23,838 ERROR [WriteToFile.java : 78] Line 2544, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:24,059 ERROR [WriteToFile.java : 78] Line 2545, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:24,286 ERROR [WriteToFile.java : 78] Line 2546, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:24,534 ERROR [WriteToFile.java : 78] Line 2547, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:24,772 ERROR [WriteToFile.java : 78] Line 2548, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:25,073 ERROR [WriteToFile.java : 78] Line 2549, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:25,305 ERROR [WriteToFile.java : 78] Line 2550, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:25,559 ERROR [WriteToFile.java : 78] Line 2551, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:26,647 ERROR [WriteToFile.java : 78] Line 2553, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:26,863 ERROR [WriteToFile.java : 78] Line 2554, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:27,149 ERROR [WriteToFile.java : 78] Line 2555, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:27,396 ERROR [WriteToFile.java : 78] Line 2556, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:27,628 ERROR [WriteToFile.java : 78] Line 2557, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:27,851 ERROR [WriteToFile.java : 78] Line 2558, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:28,113 ERROR [WriteToFile.java : 78] Line 2559, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:28,399 ERROR [WriteToFile.java : 78] Line 2560, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:29,185 ERROR [WriteToFile.java : 78] Line 2562, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:29,417 ERROR [WriteToFile.java : 78] Line 2563, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:29,649 ERROR [WriteToFile.java : 78] Line 2564, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:29,871 ERROR [WriteToFile.java : 78] Line 2565, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:30,156 ERROR [WriteToFile.java : 78] Line 2566, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:30,372 ERROR [WriteToFile.java : 78] Line 2567, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:31,190 ERROR [WriteToFile.java : 78] Line 2569, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:31,407 ERROR [WriteToFile.java : 78] Line 2570, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:31,654 ERROR [WriteToFile.java : 78] Line 2571, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:31,893 ERROR [WriteToFile.java : 78] Line 2572, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:32,140 ERROR [WriteToFile.java : 78] Line 2573, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:32,379 ERROR [WriteToFile.java : 78] Line 2574, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:32,626 ERROR [WriteToFile.java : 78] Line 2575, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:32,827 ERROR [WriteToFile.java : 78] Line 2576, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:33,081 ERROR [WriteToFile.java : 78] Line 2577, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:33,312 ERROR [WriteToFile.java : 78] Line 2578, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:33,582 ERROR [WriteToFile.java : 78] Line 2579, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:33,813 ERROR [WriteToFile.java : 78] Line 2580, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:34,061 ERROR [WriteToFile.java : 78] Line 2581, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:34,268 ERROR [WriteToFile.java : 78] Line 2582, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:35,164 ERROR [WriteToFile.java : 78] Line 2584, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:35,418 ERROR [WriteToFile.java : 78] Line 2585, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:35,634 ERROR [WriteToFile.java : 78] Line 2586, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:35,872 ERROR [WriteToFile.java : 78] Line 2587, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:36,135 ERROR [WriteToFile.java : 78] Line 2588, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:36,406 ERROR [WriteToFile.java : 78] Line 2589, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:36,622 ERROR [WriteToFile.java : 78] Line 2590, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:37,540 ERROR [WriteToFile.java : 78] Line 2592, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:37,809 ERROR [WriteToFile.java : 78] Line 2593, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:38,025 ERROR [WriteToFile.java : 78] Line 2594, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:38,272 ERROR [WriteToFile.java : 78] Line 2595, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:38,627 ERROR [WriteToFile.java : 78] Line 2596, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:38,944 ERROR [WriteToFile.java : 78] Line 2597, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:39,197 ERROR [WriteToFile.java : 78] Line 2598, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:39,414 ERROR [WriteToFile.java : 78] Line 2599, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:39,699 ERROR [WriteToFile.java : 78] Line 2600, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:40,532 ERROR [WriteToFile.java : 78] Line 2602, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:40,848 ERROR [WriteToFile.java : 78] Line 2603, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:41,103 ERROR [WriteToFile.java : 78] Line 2604, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:41,334 ERROR [WriteToFile.java : 78] Line 2605, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:41,588 ERROR [WriteToFile.java : 78] Line 2606, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:41,804 ERROR [WriteToFile.java : 78] Line 2607, Error: Invalid request. Missing the 'address', 'components', 'latlng' or 'place_id' parameter.
+2018-07-12 17:32:42,051 ERROR [WriteToFile.java : 78] Line 2608, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:42,537 ERROR [WriteToFile.java : 78] Line 2609, Error: 0
+2018-07-12 17:32:42,791 ERROR [WriteToFile.java : 78] Line 2610, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:43,023 ERROR [WriteToFile.java : 78] Line 2611, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:43,222 ERROR [WriteToFile.java : 78] Line 2612, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:43,493 ERROR [WriteToFile.java : 78] Line 2613, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:43,709 ERROR [WriteToFile.java : 78] Line 2614, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:43,924 ERROR [WriteToFile.java : 78] Line 2615, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:44,156 ERROR [WriteToFile.java : 78] Line 2616, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:44,395 ERROR [WriteToFile.java : 78] Line 2617, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:44,596 ERROR [WriteToFile.java : 78] Line 2618, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:44,859 ERROR [WriteToFile.java : 78] Line 2619, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:45,097 ERROR [WriteToFile.java : 78] Line 2620, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:45,313 ERROR [WriteToFile.java : 78] Line 2621, Error: You have exceeded your daily request quota for this API.
+2018-07-12 17:32:45,529 ERROR [WriteToFile.java : 78] Line 2622, Error: You have exceeded your daily request quota for this API.

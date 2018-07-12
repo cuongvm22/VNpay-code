@@ -60,14 +60,14 @@ public class WriteToFile {
         }
     }
 
-    public void Write() throws ApiException, InterruptedException, IOException {
+    public void Write(int inCol, int outCol) throws ApiException, InterruptedException, IOException {
         int keyIndex = 0;
         log.info("Start to update location ...");
         for (int i = 0; i < sheet.getPhysicalNumberOfRows(); i++) {
             try {
-                LatLng result = new GetLocation().GetLocation(apiKey.get(keyIndex), sheet.getRow(i).getCell(4).getStringCellValue());
-                sheet.getRow(i).getCell(10).setCellValue(result.lat);
-                sheet.getRow(i).getCell(11).setCellValue(result.lng);
+                LatLng result = new GetLocation().GetLocation(apiKey.get(keyIndex), sheet.getRow(i).getCell(inCol).getStringCellValue());
+                sheet.getRow(i).getCell(outCol).setCellValue(result.lat);
+                sheet.getRow(i).getCell(outCol + 1).setCellValue(result.lng);
                 if (i % 2000 == 1 && i > 2000 && keyIndex < apiKey.size()) {
                     log.info("Write from " + (keyIndex * 2000 + 1) + " to " + ((keyIndex + 1) * 2000 + 1));
                     wb.write(new FileOutputStream(new File(pathFile)));
@@ -82,4 +82,6 @@ public class WriteToFile {
         log.info("Update succesfully!!!");
 
     }
+
+    
 }
